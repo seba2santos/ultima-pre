@@ -30,11 +30,18 @@
         main .vivencias .imgs .img .ver a {
           display: none; }
     main .vivencias .imgs .dos {
-      visibility: visible !important;
+      display: inline-block !important;
       text-decoration: none;
       color: #000; }
     main .vivencias .imgs .dos:hover {
-      color: #575555; } }
+      color: #575555; }
+  main .promociones .p-prom {
+    font-size: 1rem !important; }
+  footer .footer {
+    display: flex;
+    flex-direction: column; }
+    footer .footer .col {
+      width: 100%; } }
 
 main .presentacion {
   width: 40%;
@@ -94,7 +101,7 @@ main .container-fluid {
             text-align: center;
             text-decoration: none; }
         main .container-fluid .vivencias .imgs .img .dos {
-          visibility: hidden; }
+          display: none; }
         main .container-fluid .vivencias .imgs .img .ver:hover {
           opacity: 1; }
 
@@ -121,6 +128,51 @@ main .container {
     font-size: 1.5em; }
   main .container .bg-naranja {
     background-color: #f1d296; }
+
+footer {
+  padding: 4em 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  background-color: #000;
+  justify-content: space-between; }
+  footer .col-img {
+    display: flex;
+    width: 30%;
+    align-self: start; }
+    footer .col-img img {
+      width: 30%;
+      margin-left: 10%; }
+    footer .col-img ul a {
+      color: #fff;
+      text-decoration: none; }
+    footer .col-img ul a:hover {
+      color: #55656b; }
+  footer .col {
+    width: 30%; }
+    footer .col ul li {
+      list-style: none;
+      color: #fff; }
+  footer .redes {
+    display: flex; }
+    footer .redes li {
+      list-style: none;
+      padding: 1em; }
+      footer .redes li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1em; }
+      footer .redes li a:hover {
+        color: #55656b; }
+  footer .col-terms {
+    align-self: start; }
+    footer .col-terms li {
+      list-style: none; }
+      footer .col-terms li a {
+        text-decoration: none;
+        color: #fff; }
+      footer .col-terms li a:hover {
+        color: #55656b; }
 
 * {
   margin: 0;
