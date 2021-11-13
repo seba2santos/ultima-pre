@@ -1,0 +1,79 @@
+@import "colores";
+$margin: 2em;
+
+
+@media (max-width: 640px) {
+    .navbar-brand {
+        margin: auto;
+    }
+    .nav-item {
+        padding-right: 0!important;
+    }
+    .dropdown-menu {
+        .dropdown-item {
+            text-align: center;
+        }
+    }
+    main {
+        .presentacion {
+            position: absolute;
+            top: 35% !important;
+            h1, span {
+                color: #fff;
+                text-shadow: 2px 2px rgba($color: #000000, $alpha: .70);
+            }
+            .h1 {
+                font-size: 1.5rem;
+                color: #fff;
+            }
+            span {
+                color: #fff;
+                font-size: 0.8rem !important;
+            }
+
+        }
+        .vivencias {
+            .imgs {
+                flex-direction: column;
+                
+                
+                .img {
+                    width: 100%;
+                    margin-bottom: $margin !important;
+                    margin: auto;
+                    .ver {
+                        display: contents;
+                        color: $negro;
+                        margin: 1em 0 2em 0;
+                        a {
+                           display: none;
+                        }
+                    }
+                }
+                    .dos {
+                        display: inline-block!important;
+                        text-decoration: none;
+                        color: #000;
+                        }
+                        .dos:hover {
+                            color: rgb(87, 85, 85);
+                        }
+               
+            }
+        }
+        .promociones {
+           .p-prom {
+               font-size: 1rem!important;
+           } 
+        }
+    }
+    footer {
+        .footer {
+        display: flex;
+        flex-direction: column;
+        .col {
+            width: 100%;
+        }
+        }
+    }   
+}

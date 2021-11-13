@@ -1,0 +1,117 @@
+main {
+    .presentacion {
+        width: 40%; 
+        text-align: center;          
+        position: absolute; 
+        top: 50%;
+        left: 28%;
+        h1 {
+            font-size: 3em;
+            color: $blue;
+        }
+        span {
+            color: $blue;
+            font-size: 1.3em;
+        }
+    }
+    
+    .container-fluid {
+        background-color: $gris;
+        .description {
+            width: 80%;
+            margin: auto !important;
+            .blue {
+                color: $blue;
+                padding-top: $margin;
+                padding-bottom: $margin;
+            }
+        }
+        .vivencias {
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            padding-bottom: 2.5em;
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $rojo;
+                margin-top: $margin;
+                margin-bottom: $margin;
+            }
+            .imgs {
+                display: flex;
+                flex-wrap: nowrap;
+                column-gap: $margin;
+                .img {
+                    position: relative;
+                    img {
+                        height: 100%;
+                        transition: all 400ms ease-out;
+                    }
+                    .ver {
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 103, 123, 0.4);
+                        opacity: 0;
+                        text-align: center;
+                        transition: all 500ms ease-out;
+                        padding: 30%;
+                        a {
+                            color: #fff;
+                            text-align: center;
+                            text-decoration: none;
+                        }
+                    }
+                    .dos {
+                        display:none;
+                    }                               .ver:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    } // hasta aquí container
+    .fotos {
+        padding-top: 5em;      
+        .container-fluid {
+            background-color: #fff;
+            align-items: center;
+            .parrafoImg {
+                padding: 2em;
+                color: $negro;
+                align-self: center;
+            }
+            .piscina {
+                margin-top: 3em;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    //promociones
+    .container {
+        margin-top: 6em;
+        .tit-prom {
+            font-size: $margin;
+            color: $blue;
+            margin-bottom: $margin - .5em;
+        }
+        .p-prom {
+            font-size: 1.5em;            
+        }
+        .bg-naranja {
+            background-color: rgb(241, 210, 150);
+        }
+
+        
+    }
+}     
+    
+
+            
+        
+                
+
+        

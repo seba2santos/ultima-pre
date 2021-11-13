@@ -1,0 +1,26 @@
+@import "media-queries";
+@import "colores";
+@import "main";
+@import "footer";
+$margin: 2em; 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:  'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+header {
+    .logo {
+        width: 50%;
+    }
+    .nav-item {
+        padding-right: 2rem;
+    }
+}
+
+
