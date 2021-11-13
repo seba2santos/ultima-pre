@@ -16,18 +16,17 @@ $margin: 2em;
     }
     main {
         .presentacion {
-            position: absolute;
-            top: 35% !important;
+            position: relative;
+            
             h1, span {
-                color: #fff;
-                text-shadow: 2px 2px rgba($color: #000000, $alpha: .70);
+                color: $rojo;
+                
             }
-            .h1 {
+            h1 {
                 font-size: 1.5rem;
-                color: #fff;
-            }
+            }       
             span {
-                color: #fff;
+                
                 font-size: 0.8rem !important;
             }
 
@@ -73,6 +72,29 @@ $margin: 2em;
         flex-direction: column;
         .col {
             width: 100%;
+            flex-direction: column;
+            text-align: center;
+            .logotipo {
+                width: 100%;
+                text-align: center;
+                img {
+                    margin: auto;
+                };
+            }
+            .lista {
+                text-align: center;
+                ul {
+                    padding: 0;
+                    margin-top: 1em;
+                }
+            }  
+            .redes {
+                justify-content: center;
+                padding: 0;
+            } 
+            ul {
+                padding: 0;
+            }
         }
         }
     }   

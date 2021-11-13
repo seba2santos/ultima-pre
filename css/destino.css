@@ -1,48 +1,3 @@
-@media (max-width: 640px) {
-  .navbar-brand {
-    margin: auto; }
-  .nav-item {
-    padding-right: 0 !important; }
-  .dropdown-menu .dropdown-item {
-    text-align: center; }
-  main .presentacion {
-    position: absolute;
-    top: 35% !important; }
-    main .presentacion h1, main .presentacion span {
-      color: #fff;
-      text-shadow: 2px 2px rgba(0, 0, 0, 0.7); }
-    main .presentacion .h1 {
-      font-size: 1.5rem;
-      color: #fff; }
-    main .presentacion span {
-      color: #fff;
-      font-size: 0.8rem !important; }
-  main .vivencias .imgs {
-    flex-direction: column; }
-    main .vivencias .imgs .img {
-      width: 100%;
-      margin-bottom: 2em !important;
-      margin: auto; }
-      main .vivencias .imgs .img .ver {
-        display: contents;
-        color: #000;
-        margin: 1em 0 2em 0; }
-        main .vivencias .imgs .img .ver a {
-          display: none; }
-    main .vivencias .imgs .dos {
-      display: inline-block !important;
-      text-decoration: none;
-      color: #000; }
-    main .vivencias .imgs .dos:hover {
-      color: #575555; }
-  main .promociones .p-prom {
-    font-size: 1rem !important; }
-  footer .footer {
-    display: flex;
-    flex-direction: column; }
-    footer .footer .col {
-      width: 100%; } }
-
 main .presentacion {
   width: 40%;
   text-align: center;
@@ -173,6 +128,64 @@ footer {
         color: #fff; }
       footer .col-terms li a:hover {
         color: #55656b; }
+
+@media (max-width: 640px) {
+  .navbar-brand {
+    margin: auto; }
+  .nav-item {
+    padding-right: 0 !important; }
+  .dropdown-menu .dropdown-item {
+    text-align: center; }
+  main .presentacion {
+    position: relative; }
+    main .presentacion h1, main .presentacion span {
+      color: #bb4d32; }
+    main .presentacion h1 {
+      font-size: 1.5rem; }
+    main .presentacion span {
+      font-size: 0.8rem !important; }
+  main .vivencias .imgs {
+    flex-direction: column; }
+    main .vivencias .imgs .img {
+      width: 100%;
+      margin-bottom: 2em !important;
+      margin: auto; }
+      main .vivencias .imgs .img .ver {
+        display: contents;
+        color: #000;
+        margin: 1em 0 2em 0; }
+        main .vivencias .imgs .img .ver a {
+          display: none; }
+    main .vivencias .imgs .dos {
+      display: inline-block !important;
+      text-decoration: none;
+      color: #000; }
+    main .vivencias .imgs .dos:hover {
+      color: #575555; }
+  main .promociones .p-prom {
+    font-size: 1rem !important; }
+  footer .footer {
+    display: flex;
+    flex-direction: column; }
+    footer .footer .col {
+      width: 100%;
+      flex-direction: column;
+      text-align: center; }
+      footer .footer .col .logotipo {
+        width: 100%;
+        text-align: center; }
+        footer .footer .col .logotipo img {
+          margin: auto; }
+      footer .footer .col .lista {
+        text-align: center; }
+        footer .footer .col .lista ul {
+          padding: 0;
+          margin-top: 1em; }
+      footer .footer .col .redes {
+        justify-content: center;
+        padding: 0; }
+      footer .footer .col ul {
+        padding: 0; } }
 
 * {
   margin: 0;
