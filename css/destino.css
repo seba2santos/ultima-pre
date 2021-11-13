@@ -129,6 +129,69 @@ footer {
       footer .col-terms li a:hover {
         color: #55656b; }
 
+.masajes {
+  background-image: url(../media/servicios/toalla_velas.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .masajes .descripcion-masajes {
+    width: 50%; }
+    .masajes .descripcion-masajes .h2 {
+      color: #bb4d32;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      margin: 0 1em; }
+    .masajes .descripcion-masajes .h3 {
+      color: #bb4d32;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+    .masajes .descripcion-masajes p {
+      margin: 2em;
+      line-height: 1.5em;
+      font-size: 1em;
+      color: #FF890A;
+      line-height: 2em; }
+    .masajes .descripcion-masajes .title {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .masajes .descripcion-masajes .title i {
+        color: #bb4d32; }
+
+.spa {
+  background-image: url(../media/servicios/terapia_facial.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: right;
+  text-align: center; }
+  .spa .descripcion-spa {
+    width: 50%;
+    display: flex;
+    flex-direction: column; }
+    .spa .descripcion-spa .title {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .spa .descripcion-spa .title .h2 {
+        color: #bb4d32;
+        margin: 0 1em;
+        padding-top: 2em;
+        padding-bottom: 2em; }
+      .spa .descripcion-spa .title i {
+        color: #bb4d32; }
+    .spa .descripcion-spa .h3 {
+      color: #bb4d32;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+    .spa .descripcion-spa p {
+      margin: 2em;
+      line-height: 1.5em;
+      font-size: 1em;
+      color: #FF890A;
+      line-height: 2em; }
+
 @media (max-width: 640px) {
   .navbar-brand {
     margin: auto; }

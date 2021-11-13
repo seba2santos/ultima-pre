@@ -1,0 +1,82 @@
+@mixin parrafo {
+    margin: $margin;
+            line-height: 1.5em;
+            font-size: 1em;
+            color: $naranja;
+            line-height: 2em;
+}
+.masajes {
+    background-image: url(../media/servicios/toalla_velas.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .descripcion-masajes {
+        width: 50%;
+        .h2 {
+            color: $rojo;
+            padding-top: $margin;
+            padding-bottom: $margin;
+            margin: 0 1em;
+        }
+        .h3 {
+            color: $rojo;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }    
+        p {
+           @include parrafo;
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: $rojo;
+            }
+            
+        }
+    }
+}
+.spa {
+    background-image: url(../media/servicios/terapia_facial.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    .descripcion-spa{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .h2 {
+            color: $rojo;
+            margin: 0 1em;
+            padding-top: $margin;
+            padding-bottom: $margin;
+        }
+        i {
+            color: $rojo;
+        }
+     }
+     .h3 {
+        color: $rojo;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }    
+    p {
+       @include parrafo;
+    }
+
+
+  }
+}
+        
+        
+    
+    
