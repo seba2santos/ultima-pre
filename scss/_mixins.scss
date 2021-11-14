@@ -1,0 +1,23 @@
+@mixin parrafo {
+    margin: $margin;
+    line-height: 1.5em;
+    font-size: 1em;
+    color: $naranja;
+    line-height: 3em;
+}
+@mixin titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin h3 {
+    color: $rojo;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+@mixin h2 {
+    color: $rojo;
+    padding-top: $margin;
+    padding-bottom: $margin;
+    margin: 0 1em;
+}

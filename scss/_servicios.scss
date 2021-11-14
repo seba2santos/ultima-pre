@@ -1,20 +1,5 @@
-@mixin parrafo {
-    margin: $margin;
-    line-height: 1.5em;
-    font-size: 1em;
-    color: $naranja;
-    line-height: 2em;
-}
-@mixin titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@mixin h3 {
-    color: $rojo;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
+@import "mixins";
+
 .masajes {
     background-image: url(../media/servicios/toalla_velas.jpg);
     background-position: right;
@@ -83,11 +68,11 @@
     background-position: right;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    text-align: center;
     .descripcion-cabalgatas {
         display: flex;
         flex-direction: column;
         width: 50%;
-    
     .title {
         @include titulo;
         h2 {

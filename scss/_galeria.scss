@@ -1,0 +1,13 @@
+@import "mixins";
+@import "colores";
+$margin: 2em;
+.container-lg {
+    background-color: $gris;
+    text-align: center;
+    .title {
+        @include titulo;
+        .h2 {
+            @include h2;
+        }
+    }
+}
