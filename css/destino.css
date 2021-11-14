@@ -192,6 +192,38 @@ footer {
       color: #FF890A;
       line-height: 2em; }
 
+.cabalgatas {
+  background-image: url(../media/servicios/mujer-agachada-acariciando-caballo.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .cabalgatas .descripcion-cabalgatas {
+    display: flex;
+    flex-direction: column;
+    width: 50%; }
+    .cabalgatas .descripcion-cabalgatas .title {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .cabalgatas .descripcion-cabalgatas .title h2 {
+        color: #bb4d32;
+        margin: 0 1em;
+        padding-top: 2em;
+        padding-bottom: 2em; }
+      .cabalgatas .descripcion-cabalgatas .title i {
+        color: #bb4d32; }
+    .cabalgatas .descripcion-cabalgatas .h3 {
+      color: #bb4d32;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin: auto; }
+    .cabalgatas .descripcion-cabalgatas p {
+      margin: 2em;
+      line-height: 1.5em;
+      font-size: 1em;
+      color: #FF890A;
+      line-height: 2em; }
+
 @media (max-width: 640px) {
   .navbar-brand {
     margin: auto; }

@@ -1,9 +1,19 @@
 @mixin parrafo {
     margin: $margin;
-            line-height: 1.5em;
-            font-size: 1em;
-            color: $naranja;
-            line-height: 2em;
+    line-height: 1.5em;
+    font-size: 1em;
+    color: $naranja;
+    line-height: 2em;
+}
+@mixin titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin h3 {
+    color: $rojo;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .masajes {
     background-image: url(../media/servicios/toalla_velas.jpg);
@@ -19,17 +29,13 @@
             margin: 0 1em;
         }
         .h3 {
-            color: $rojo;
-            padding-top: 1em;
-            padding-bottom: 1em;
+            @include h3;
         }    
         p {
            @include parrafo;
         }
         .title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include titulo;
             i {
                 color: $rojo;
             }
@@ -51,9 +57,7 @@
         flex-direction: column;
     
     .title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include titulo;
         .h2 {
             color: $rojo;
             margin: 0 1em;
@@ -65,9 +69,7 @@
         }
      }
      .h3 {
-        color: $rojo;
-        padding-top: 1em;
-        padding-bottom: 1em;
+       @include h3;
     }    
     p {
        @include parrafo;
@@ -76,7 +78,38 @@
 
   }
 }
-        
+.cabalgatas {
+    background-image: url(../media/servicios/mujer-agachada-acariciando-caballo.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .descripcion-cabalgatas {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    
+    .title {
+        @include titulo;
+        h2 {
+            color: $rojo;
+            margin: 0 1em;
+            padding-top: $margin;
+            padding-bottom: $margin;
+        }
+        i {
+            color: $rojo;
+        }
+    }
+    
+    .h3 {
+        @include h3;
+        margin: auto;
+    }
+    p {
+        @include parrafo;
+        }
+    }
+}  
         
     
     
