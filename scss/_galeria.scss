@@ -10,4 +10,71 @@ $margin: 2em;
             @include h2;
         }
     }
+    .galeria {
+        .galeria-playa {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            .img-gal {
+                width: 30%;
+                border: 2px solid $rojo;
+                overflow: hidden;
+                margin: 1.5em;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: all ease 500ms;
+                   
+                }
+                img:hover {
+                   transform: scale(1.3);
+                }
+            }
+            .hor {
+                display:flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .img-gal-hor {
+                    @extend .img-gal;
+                    width: 100%;
+                    height: fit-content;
+                }
+            }
+        }
+        .galeria-entorno {
+            .img-gal-hor {
+                width: 70%;
+                margin: auto;
+                border: 2px solid $rojo;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: all ease 500ms;
+                }
+                img:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        .resto {
+                display: flex;
+                .img-gal {
+                    width: 30%;
+                border: 2px solid $rojo;
+                overflow: hidden;
+                margin: 1.5em;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: all ease 500ms;
+                   
+                }
+                img:hover {
+                   transform: scale(1.3);
+                }
+                }
+            }
+        }
+    
 }

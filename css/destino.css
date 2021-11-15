@@ -236,6 +236,52 @@ footer {
       padding-top: 2em;
       padding-bottom: 2em;
       margin: 0 1em; }
+  .container-lg .galeria .galeria-playa {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto; }
+    .container-lg .galeria .galeria-playa .img-gal, .container-lg .galeria .galeria-playa .hor .img-gal-hor {
+      width: 30%;
+      border: 2px solid #bb4d32;
+      overflow: hidden;
+      margin: 1.5em; }
+      .container-lg .galeria .galeria-playa .img-gal img, .container-lg .galeria .galeria-playa .hor .img-gal-hor img {
+        width: 100%;
+        height: 100%;
+        transition: all ease 500ms; }
+      .container-lg .galeria .galeria-playa .img-gal img:hover, .container-lg .galeria .galeria-playa .hor .img-gal-hor img:hover {
+        transform: scale(1.3); }
+    .container-lg .galeria .galeria-playa .hor {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      .container-lg .galeria .galeria-playa .hor .img-gal-hor {
+        width: 100%;
+        height: fit-content; }
+  .container-lg .galeria .galeria-entorno .img-gal-hor {
+    width: 70%;
+    margin: auto;
+    border: 2px solid #bb4d32;
+    overflow: hidden; }
+    .container-lg .galeria .galeria-entorno .img-gal-hor img {
+      width: 100%;
+      height: 100%;
+      transition: all ease 500ms; }
+    .container-lg .galeria .galeria-entorno .img-gal-hor img:hover {
+      transform: scale(1.3); }
+  .container-lg .galeria .resto {
+    display: flex; }
+    .container-lg .galeria .resto .img-gal, .container-lg .galeria .resto .galeria-playa .hor .img-gal-hor, .container-lg .galeria .galeria-playa .hor .resto .img-gal-hor {
+      width: 30%;
+      border: 2px solid #bb4d32;
+      overflow: hidden;
+      margin: 1.5em; }
+      .container-lg .galeria .resto .img-gal img, .container-lg .galeria .resto .galeria-playa .hor .img-gal-hor img, .container-lg .galeria .galeria-playa .hor .resto .img-gal-hor img {
+        width: 100%;
+        height: 100%;
+        transition: all ease 500ms; }
+      .container-lg .galeria .resto .img-gal img:hover, .container-lg .galeria .resto .galeria-playa .hor .img-gal-hor img:hover, .container-lg .galeria .galeria-playa .hor .resto .img-gal-hor img:hover {
+        transform: scale(1.3); }
 
 @media (max-width: 640px) {
   .navbar-brand {
