@@ -1,0 +1,43 @@
+.form-contacto {
+    padding-bottom: 2.5em;
+    background-color: rgba(205, 134, 63, 0.157);
+    .h1 {
+        padding: 1.5em 0;
+        color: $blue;
+    }
+.container-sm {
+        .datos{
+            padding: 1.5em;
+            color: $rojo;
+        }
+        .date {
+            margin-bottom: .5em;
+        }
+        .datos-personales {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .nombre {
+                width: 45%;
+                margin-bottom: .5em;
+                padding: .5em;
+            }
+            .email {
+                width: 100%;
+                margin-bottom: .5em;
+                padding: .5em;
+            }
+        .personas {
+            display: flex;
+            flex-direction: column!important;
+            .number {
+                padding: .5em;
+                width: 20%;
+            }
+        }
+
+        }
+    }
+    
+}
+

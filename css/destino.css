@@ -357,6 +357,36 @@ footer {
   .container .carta span {
     color: #bb4d32; }
 
+.form-contacto {
+  padding-bottom: 2.5em;
+  background-color: rgba(205, 134, 63, 0.157); }
+  .form-contacto .h1 {
+    padding: 1.5em 0;
+    color: #14213d; }
+  .form-contacto .container-sm .datos {
+    padding: 1.5em;
+    color: #bb4d32; }
+  .form-contacto .container-sm .date {
+    margin-bottom: .5em; }
+  .form-contacto .container-sm .datos-personales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .form-contacto .container-sm .datos-personales .nombre {
+      width: 45%;
+      margin-bottom: .5em;
+      padding: .5em; }
+    .form-contacto .container-sm .datos-personales .email {
+      width: 100%;
+      margin-bottom: .5em;
+      padding: .5em; }
+    .form-contacto .container-sm .datos-personales .personas {
+      display: flex;
+      flex-direction: column !important; }
+      .form-contacto .container-sm .datos-personales .personas .number {
+        padding: .5em;
+        width: 20%; }
+
 @media (max-width: 640px) {
   .navbar-brand {
     margin: auto; }
