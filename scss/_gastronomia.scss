@@ -1,0 +1,67 @@
+@import "colores";
+@import "mixins";
+$margin: 2em;
+
+.container {
+    .terraza{
+        display: flex;
+        width: 85%;
+        margin: auto;
+        .texto {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            .title {
+                @include titulo;
+                width: 100%;
+                .h3 {
+                    margin: $margin;
+                    color: $blue;
+                }
+            }
+            p {
+                @include parrafo;
+                width: 100%;
+                padding: $margin;
+                margin: 0 auto;
+
+            }
+        }
+        .image {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            width: 50%;
+            img {
+                height: 80%;
+                vertical-align: middle;
+                width: 80%;
+                margin-top: 20%;
+            }
+        }
+    }
+    .carta {
+        background-color: rgba(255, 166, 0, 0.274);
+        padding-left: $margin;
+        padding-right: $margin;
+        .title {
+            @include titulo;
+            color: $blue;
+            .h3 {
+                padding-left: $margin;
+                padding-right: $margin;
+            }
+            .line {
+                color: $blue;
+            }
+        }
+        .carnes .pescado {
+            justify-self: right;
+        }
+        span {
+            color: $rojo;
+        }
+    }
+    
+}

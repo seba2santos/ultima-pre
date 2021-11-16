@@ -9,6 +9,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $rojo;
+    margin-top: $margin;
+    margin-bottom: $margin;
 }
 @mixin h3 {
     color: $rojo;
