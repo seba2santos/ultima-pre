@@ -1,6 +1,18 @@
 $margin: 2em;
 
 main {
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .second {
+                    display: none !important;
+                }
+                .third {
+                    display: none !important;
+                }
+            }
+        }
+    }
     .presentacion {
         width: 40%; 
         text-align: center;          
